@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./../style/style.css">
+    <title>Buy</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="show.html">Pegawai</a>
+            </li>
+            <li>
+                <a href="index.html" style="background-color: black;
+                color: white;">Customer</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="section1">
+            <div id="wrap-ui">
+                <div class="wrap-image">
+                    <img id="img" src="../assets/rokok.png" />
+                </div>
+                <div id="wrap-child-text">
+                    <div id="wrap-text">
+                        <p  style="color:black;">Rokok Black</p>
+                        <p style="color:black;" >Rp30.000,00</p>
+                    </div>
+                    <button id="beli">Beli</button>
+                </div>
+            </div>
+
+            <div id="main-form">
+                <h3>Transaksi</h3>
+                <div id="data">
+                    <div class="wrap-form-text">
+                        <p  style="color: rgb(180, 180, 180);">Jenis barang :</p>
+                        <p id="barang">Rokok Black</p>
+                    </div>
+                    
+                    <div class="wrap-form-text">
+                        <p style="color: rgb(180, 180, 180);">Harga :</p>
+                        <p id="harga">30000</p>
+                    </div>
+                    <div class="wrap-form-text">
+                        <p style="color: rgb(180, 180, 180);">Tanggal :</p>
+                        <p id="tanggal">19-10-2022</p>
+                    </div>
+
+                </div>
+                <form>
+                    <input id="nama" type="text" placeholder="Masukkan Nama"/>
+                    <input id="rek" type="number" placeholder="Masukkan No Rekening"/>
+                </form>
+                <div id="pilih">
+                    <input id="cek1" class="cekbox" type="checkbox" value="BRI" onclick="toggleCek('cek1')" />
+                    <label for="cek1" class="ceklabel" >BRI</label>
+                    <input id="cek2"  class="cekbox" type="checkbox" value="BRI" onclick="toggleCek('cek2')" />
+                    <label for="cek2" class="ceklabel" >BCA</label>
+                    <input id="cek3"  class="cekbox" type="checkbox" value="BRI" onclick="toggleCek('cek3')" />
+                    <label for="cek3" class="ceklabel" >Mandiri</label>
+                </div>
+                <button id="bayar">Bayar</button>
+            </div>
+
+
+        </section>
+    </main>
+    <script src="../script/encode.js"></script>
+    <script  src="../script/steganography.js"></script>
+    <script src="../script/jsencrypt.js"></script>
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+</body>
+</html>
